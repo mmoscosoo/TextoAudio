@@ -8,7 +8,51 @@ import base64
 
 st.set_page_config(page_title="Cuentacuentos mágico", layout="centered")
 
-st.markdown('<style>body {background-color: #fce6fb;} .stApp {background-color: #fce6fb; text-align: center;} h1, .stApp h1 {color: #8a2be2 !important; text-align: center;} h2, h3, .stApp h2 {color: #8a2be2 !important; text-align: center;} .stButton>button {background-color: #8a2be2; color: white; border: none; border-radius: 8px; padding: 0.5em 1em; font-weight: bold; display: block; margin: auto;} .stTextArea textarea, .stSelectbox div[data-baseweb="select"] {color: #ffb3ec !important;} .stTextArea label, .stSelectbox label {color: #8a2be2 !important; text-align: center; display: block; width: 100%;} .custom-text {color: #a974d1; text-align: center; font-size: 16px;}</style>', unsafe_allow_html=True)
+st.markdown('''
+    <style>
+        body {
+            background-color: #fff8dc;
+        }
+        .stApp {
+            background-color: #fff8dc;
+            text-align: center;
+        }
+        h1, .stApp h1 {
+            color: #ffcc00 !important;
+            text-align: center;
+        }
+        h2, h3, .stApp h2 {
+            color: #ffcc00 !important;
+            text-align: center;
+        }
+        .stButton>button {
+            background-color: #ffd700;
+            color: black;
+            border: none;
+            border-radius: 8px;
+            padding: 0.5em 1em;
+            font-weight: bold;
+            display: block;
+            margin: auto;
+        }
+        .stTextArea textarea,
+        .stSelectbox div[data-baseweb="select"] {
+            color: #996c00 !important;
+        }
+        .stTextArea label,
+        .stSelectbox label {
+            color: #ffcc00 !important;
+            text-align: center;
+            display: block;
+            width: 100%;
+        }
+        .custom-text {
+            color: #b8860b;
+            text-align: center;
+            font-size: 16px;
+        }
+    </style>
+''', unsafe_allow_html=True)
 
 st.title("Conversión de Texto a Audio")
 
@@ -25,7 +69,14 @@ except:
 
 st.subheader("Cuentacuentos mágico")
 
-st.markdown('<p class="custom-text">Bienvenidos al rincón donde las palabras cobran vida. En Cuentacuentos mágico, puedes escribir tus propias historias o frases y escucharlas narradas como si salieran de un libro encantado. Ideal para antes de dormir, para jugar o simplemente para dejar volar la imaginación. ¡Escribe tu cuento y deja que la magia comience!</p>', unsafe_allow_html=True)
+st.markdown('''
+<p class="custom-text">
+Bienvenidos al rincón donde las palabras cobran vida. En Cuentacuentos mágico,
+puedes escribir tus propias historias o frases y escucharlas narradas como si salieran de un libro encantado.
+Ideal para antes de dormir, para jugar o simplemente para dejar volar la imaginación.
+¡Escribe tu cuento y deja que la magia comience!
+</p>
+''', unsafe_allow_html=True)
 
 st.markdown('<p class="custom-text">...</p>', unsafe_allow_html=True)
 
