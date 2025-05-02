@@ -12,7 +12,7 @@ st.markdown('<style>body {background-color: #fce6fb;} .stApp {background-color: 
 
 st.title("Conversión de Texto a Audio")
 
-image = Image.open("cuervito.png")
+image = Image.open("download.jpg")
 st.image(image, use_container_width=True)
 
 with st.sidebar:
